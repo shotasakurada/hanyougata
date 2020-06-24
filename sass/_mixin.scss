@@ -1,0 +1,124 @@
+$pc: 1024px; // PC
+$tab: 1023px; // タブレット
+$sp: 736px;  // スマホ
+$base-font: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho","游ゴシック体",YuGothic,"游明朝体",YuMincho,serif;
+$main-font: 'Times New Roman','Luchida Grande',serif;
+$sub-font:'Times New Roman','Luchida Grande',serif;
+$base-font-color:#2B2B2B;
+$main-color:#01cb56;
+$sub-color1:#2DE67B;
+$sub-color2:#fef275;
+$sub-color3:#EAC754;
+$base-color:#F2F0EA;
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin clear{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+@mixin contents{
+  width: $pc;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin sp-contents{
+  box-sizing: border-box;
+  width: 100%;
+  padding:0 20px;
+}
+
+@mixin list-none{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+@mixin center-center{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin center-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin center-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin center-right{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+@mixin center-left{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+@mixin arrowRight{
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  content: '';
+}
+
+@mixin arrow-right{
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  content: '';
+}
+
+@mixin arrow-bottom{
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position: absolute;
+  content: '';
+}
+
+@mixin arrow-left{
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  content: '';
+}

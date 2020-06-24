@@ -1,0 +1,23 @@
+.thanks-contents h2{
+  text-align: left;
+  border-left: solid 2px $main-color;
+  margin-top: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.normal-ul{
+  padding-left: 20px;
+    li{
+      margin-bottom: 15px;
+    }
+}
+
+.center-htitle{
+  padding-left: 0 !important;
+  font-size: 22px !important;
+  text-align: center !important;
+  border-left: none !important;
+}

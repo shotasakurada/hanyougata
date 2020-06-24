@@ -1,0 +1,738 @@
+@charset "UTF-8";
+@media (min-width: 480px) {
+  body {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 480px;
+  }
+}
+
+.header {
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+html, body, header, footer, figure, h1, h2, h3, h4, table, tr, th, td, div, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, sans-serif;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.flex-wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+}
+
+.wide-contents {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.inner-contents {
+  padding: 0 20px;
+}
+
+.inner-contents h2 {
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.discription-contents {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mainvisual {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  margin-top: -50px;
+  background-size: cover !important;
+}
+
+.seminar-name {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  background: rgba(51, 51, 51, 0.87);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.info-item {
+  background: #D32F2F;
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  border: solid #01CB56 2px;
+  background: #fff;
+  padding: 25px 12px 12px 12px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.discription {
+  padding: 6px 10px;
+  width: 140px;
+  height: 38px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -20px;
+  left: 12px;
+  background: #01CB56;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mosaic1 {
+  background: url(../../common/img/masaic1.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.point {
+  margin-bottom: 25px;
+}
+
+.point h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.chrge-wrap {
+  margin-bottom: 10px;
+}
+
+.chrge-wrap img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chrge-wrap h4 {
+  font-size: 17px;
+  padding-top: 12px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+
+.box-skellton {
+  border-radius: 10px;
+  border: solid 1px #fff;
+  padding: 12px;
+}
+
+.mosaic2 {
+  background: url(../../common/img/masaic2.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.normal-box {
+  border: solid 1px #fff;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.normal-box:last-child {
+  margin-bottom: 0;
+}
+
+.guest-wrap img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.guest-info {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.positon {
+  letter-spacing: 1px;
+}
+
+.time-table {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: relative;
+}
+
+.time-table::after {
+  border-left: solid 2px #01CB56;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.time-table li::before {
+  position: relative;
+  top: -2px;
+  left: -18px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 100%;
+  background: #01CB56;
+}
+
+.time-table li::after {
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  width: 2px;
+  height: 15px;
+  content: '';
+  background: #01CB56;
+}
+
+.time-table li:first-child::after {
+  display: none;
+}
+
+.time-table li {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 15px;
+}
+
+.time-table li:last-child {
+  margin-bottom: 0;
+}
+
+.white-box {
+  padding: 15px;
+  box-shadow: 0px 3px 10px #00000029;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 125px;
+}
+
+.white-box:last-child {
+  margin-bottom: 0;
+}
+
+.white-box.active1 {
+  overflow: visible;
+  height: 100%;
+}
+
+.white-box.active2 {
+  overflow: visible;
+  height: 100%;
+}
+
+.white-box.active3 {
+  overflow: visible;
+  height: 100%;
+}
+
+.toggl-trriger1, .toggl-trriger2, .toggl-trriger3 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 60px;
+  /*グラデーションで隠す高さ*/
+  box-sizing: border-box;
+  padding-top: 25px;
+  text-align: center;
+  color: #01CB56;
+  font-size: 18px;
+  text-decoration: underline;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, #fff 100%);
+}
+
+.voice-info::before {
+  content: '';
+  background: url(../../common/img/voice.png) no-repeat center;
+  background-size: cover;
+  width: 29px;
+  height: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.voice-info {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th {
+  text-align: left;
+  width: 95px;
+  box-sizing: border-box;
+  padding: 7px;
+  border-bottom: solid 1px #01CB56;
+}
+
+.event-table td {
+  text-align: left;
+  padding: 7px;
+  border-bottom: solid 1px #01CB56;
+}
+
+.map-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cauption-box {
+  border: solid 2px #fff;
+  padding: 15px 10px 10px 10px;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 17px;
+}
+
+.cauption-box:last-child {
+  margin-bottom: 0;
+}
+
+.schedule {
+  margin-right: 10px;
+  margin-left: -6px;
+  font-weight: 600;
+  color: #01CB56;
+}
+
+.mark {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+}
+
+.profile p span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding: 15px 0 5px 0;
+  display: block;
+}
+
+.requier {
+  background: #D32F2F;
+  color: #fff;
+  padding: 3px 5px !important;
+  font-size: 14px !important;
+  margin-left: 5px;
+  display: inline !important;
+}
+
+.input-txt {
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 3px solid #CCCCCC;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+}
+
+.ttl-step {
+  margin: 10px 0;
+}
+
+.btn-submit {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #01CB56;
+  border: none;
+  color: #fff;
+  font-size: 23px;
+  text-decoration: none;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: .4px;
+  box-shadow: 2px 3px 6px #00000029;
+  display: block;
+}
+
+.list-date {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-date input {
+  display: none;
+}
+
+.list-date li label .chk-date:checked + span.mwform-checkbox-field-text {
+  border: 4px solid #D32F2F;
+}
+
+.list-date li input, .list-date li button, .list-date li textarea, .list-date li select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.profile p .input_txt {
+  font-size: 18px;
+  border: 3px solid #CCCCCC;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input.btn_submit {
+  background: #01CB56;
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  box-shadow: 2px 3px 6px #00000029;
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/*選択されているタブのスタイルを変える*/
+.list-date {
+  margin-bottom: 20px;
+}
+
+.list-date li {
+  margin-bottom: 10px;
+}
+
+.list-date li select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  vertical-align: middle;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.list-date li input, .list-date li button, .list-date li textarea, .list-date li select, .list-date li input[type="button"], .list-date li input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.list-date li input, .list-date li button, .list-date li textarea, .list-date li select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.list-date li input {
+  display: none;
+}
+
+.list-date li label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.list-date li label span.mwform-checkbox-field-text {
+  background: #fff;
+  border: 4px solid #CCCCCC;
+  display: block;
+  padding: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-date li label span.mwform-checkbox-field-text .time {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.list-date li label span.mwform-checkbox-field-text .remaining {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.list-date li label span.mwform-checkbox-field-text .remaining::first-letter {
+  color: #ec1c24;
+}
+
+.list-date li label .chk-date:checked + span.mwform-checkbox-field-text {
+  border: 4px solid #ec1c24 !important;
+}
+
+.thanks-visual {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: #EFEFEF;
+}
+
+.green {
+  background: #01CB56;
+}
+
+.black {
+  background: #333 !important;
+}
+
+.gray-bg {
+  background: #EFEFEF;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.red-bg {
+  background: #D32F2F;
+  color: #fff;
+}
+
+.green-bg {
+  background: #F5FCF8;
+}
+
+.text-contents {
+  padding: 15px;
+}
+
+.shadow-contents {
+  padding: 15px;
+  box-shadow: 0px 3px 10px #00000029;
+}
+
+.left-diagonal {
+  position: relative;
+  overflow: hidden;
+}
+
+.left-diagonal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 38%;
+  margin: 20% -10% 0;
+  background: #01CB56;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+.sub {
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: #01CB56;
+}
+
+.white-color {
+  color: #fff !important;
+}
+
+.button {
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 9px;
+  text-align: center;
+  letter-spacing: .4px;
+  box-shadow: 2px 3px 6px #00000029;
+  display: block;
+  width: 92px;
+  box-sizing: border-box;
+}
+
+.status-on::before {
+  content: "○";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.status-off::before {
+  content: "×";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.place::before {
+  content: "";
+  background: url(../../common/img/map.png) no-repeat center;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.place {
+  margin-left: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  box-shadow: 3px -2px 6px #00000029;
+  padding: 8px 20px;
+}
+
+.footer-button {
+  margin-left: auto;
+  margin-right: 0px;
+  padding: 12px !important;
+}
+
+.twitter, .line, .facebook, .tel {
+  width: 35px;
+  padding: 5px;
+  display: block;
+}
+
+.footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.copyright {
+  background: #01CB56;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.thanks-contents h2 {
+  text-align: left;
+  border-left: solid 2px #01cb56;
+  margin-top: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.normal-ul {
+  padding-left: 20px;
+}
+
+.normal-ul li {
+  margin-bottom: 15px;
+}
+
+.center-htitle {
+  padding-left: 0 !important;
+  font-size: 22px !important;
+  text-align: center !important;
+  border-left: none !important;
+}
